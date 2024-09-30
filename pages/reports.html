@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="../scripts/reports.js"></script> <!-- Link to JS file -->
+</head>
+<body>
+    <header>
+        <h1>Generate Reports</h1>
+    </header>
+
+    <main>
+        <form id="reportForm">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required><br><br>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required><br><br>
+
+            <input type="submit" value="Generate Report">
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+        <div id="successMessage" style="color: green; display: none;">Report generated successfully!</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AquaSync</p>
+    </footer>
+</body>
+</html>
